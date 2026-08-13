@@ -12,7 +12,7 @@ Open `index.html` in a browser. No build step is required.
 .\publish.ps1
 ```
 
-The script commits and pushes pending changes to [matthurtado/matthurtado.com](https://github.com/matthurtado/matthurtado.com), then synchronizes the site through the saved WinSCP session `matthurtado.com`. On its first run, it initializes this folder as a Git repository and configures the GitHub remote automatically.
+The script commits and pushes pending changes to [matthurtado/matthurtado.com](https://github.com/matthurtado/matthurtado.com), then stages only the public website files and synchronizes them to `/public_html/` through the saved WinSCP session `matthurtado.com`. On its first run, it initializes this folder as a Git repository and configures the GitHub remote automatically.
 
 Useful options:
 

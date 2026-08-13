@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [string]$CommitMessage = "Update portfolio website",
-    [string]$RemoteDirectory = "/",
+    [string]$RemoteDirectory = "/public_html/",
     [switch]$SkipGit,
     [switch]$SkipUpload
 )
@@ -82,19 +82,38 @@ if ($SkipUpload) {
 }
 
 $WinScpPath = Find-WinScp
+$PublishDirectory = Join-Path ([System.IO.Path]::GetTempPath()) ("matthurtado-publish-" + [guid]::NewGuid().ToString("N"))
+$PublishFiles = @("index.html", "oow_pic.jpg", "favicon.svg")
+
+New-Item -ItemType Directory -Path $PublishDirectory | Out-Null
+foreach ($file in $PublishFiles) {
+    $source = Join-Path $ProjectRoot $file
+    if (-not (Test-Path -LiteralPath $source)) {
+        throw "Publish file is missing: $source"
+    }
+
+    Copy-Item -LiteralPath $source -Destination $PublishDirectory
+}
+
 $openCommand = "open $WinScpSession"
-$synchronizeCommand = "synchronize remote -filemask=`"| .git/; README.md; publish.ps1`" `"$ProjectRoot`" `"$RemoteDirectory`""
+$synchronizeCommand = "synchronize remote $PublishDirectory $RemoteDirectory"
 
 Write-Host "Uploading with the saved WinSCP session '$WinScpSession'..."
-& $WinScpPath /command `
-    "option batch abort" `
-    "option confirm off" `
-    $openCommand `
-    $synchronizeCommand `
-    "exit"
+try {
+    & $WinScpPath /command `
+        "option batch abort" `
+        "option confirm off" `
+        $openCommand `
+        $synchronizeCommand `
+        "exit"
 
-if ($LASTEXITCODE -ne 0) {
-    throw "WinSCP failed with exit code $LASTEXITCODE."
+    if ($LASTEXITCODE -ne 0) {
+        throw "WinSCP failed with exit code $LASTEXITCODE."
+    }
+} finally {
+    if (Test-Path -LiteralPath $PublishDirectory) {
+        Remove-Item -LiteralPath $PublishDirectory -Recurse -Force
+    }
 }
 
 Write-Host "Website published successfully."
