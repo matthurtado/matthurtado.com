@@ -378,8 +378,15 @@
       .player-card { width: 82%; }
       .player-card p { max-width: 16rem; }
       .topbar .level { display: none; }
-      .menu { position: sticky; top: .5rem; z-index: 10; overflow-x: auto; justify-content: flex-start; }
-      .menu button { min-width: 7.6rem; font-size: .8rem; }
+      .menu {
+        position: sticky;
+        top: .5rem;
+        z-index: 10;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        overflow: visible;
+      }
+      .menu button { min-width: 0; font-size: .76rem; }
       .stats, .project-grid { grid-template-columns: 1fr; }
       .project.wide { grid-column: auto; }
       .screen h2 { font-size: clamp(2.5rem, 15vw, 4.2rem); }
