@@ -1,4 +1,4 @@
-# Matt Hurtado — Portfolio
+# Matt Hurtado: Portfolio
 
 A dependency-free, single-page portfolio styled as a full-screen retro game menu.
 
