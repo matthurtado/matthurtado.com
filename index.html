@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12091f">
+  <meta name="description" content="Matt Hurtado — game industry software engineer and host of Virtual Soundscapes.">
+  <title>Matt Hurtado</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #f8f1ff;
+      --muted: #baacd0;
+      --deep: #090510;
+      --panel: rgba(22, 10, 38, .82);
+      --purple: #9b5cff;
+      --violet: #c98cff;
+      --cyan: #55e7ef;
+      --pink: #ff66bd;
+      --line: rgba(201, 140, 255, .42);
+      --pixel: "Press Start 2P", monospace;
+      --ui: "Chakra Petch", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: auto; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+      background:
+        linear-gradient(rgba(155, 92, 255, .04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(155, 92, 255, .04) 1px, transparent 1px),
+        radial-gradient(circle at 18% 30%, #4f2580 0, transparent 32rem),
+        radial-gradient(circle at 85% 85%, #241048 0, transparent 35rem),
+        var(--deep);
+      background-size: 42px 42px, 42px 42px, auto, auto, auto;
+      color: var(--ink);
+      font-family: var(--ui);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      pointer-events: none;
+      opacity: .16;
+      background: repeating-linear-gradient(0deg, transparent 0 3px, rgba(0, 0, 0, .3) 4px);
+      transform: translateZ(0);
+      will-change: transform;
+    }
+
+    a { color: inherit; }
+    button { font: inherit; }
+
+    .shell {
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+      display: grid;
+      grid-template-columns: minmax(360px, 38vw) minmax(0, 1fr);
+    }
+
+    .identity {
+      min-height: 100vh;
+      position: sticky;
+      top: 0;
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      padding: clamp(1.4rem, 3vw, 3.5rem);
+      border-right: 1px solid var(--line);
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(44, 18, 73, .92), rgba(12, 6, 22, .78));
+    }
+
+    .identity::after {
+      content: "";
+      position: absolute;
+      width: 28rem;
+      height: 28rem;
+      left: -8rem;
+      bottom: -10rem;
+      border: 1px solid rgba(85, 231, 239, .25);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4rem rgba(155, 92, 255, .04), 0 0 0 8rem rgba(155, 92, 255, .025);
+    }
+
+    .status {
+      font-family: var(--pixel);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .portrait-wrap {
+      width: min(90%, 620px);
+      min-height: 0;
+      flex: 1;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: end;
+      margin: 1rem auto 0;
+    }
+
+    .portrait {
+      display: block;
+      width: 100%;
+      max-height: 70vh;
+      object-fit: contain;
+      object-position: bottom;
+      filter: drop-shadow(16px 18px 0 rgba(9, 5, 16, .38));
+    }
+
+    .player-card {
+      position: relative;
+      z-index: 2;
+      margin-top: -1px;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .player-card h1 {
+      margin: 0;
+      font: 700 clamp(2.1rem, 4.3vw, 4.8rem)/.88 var(--ui);
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 0 #51248a;
+    }
+
+    .player-card p { margin: .75rem 0 0; color: var(--muted); font-size: 1.05rem; }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      margin-top: 1rem;
+      color: var(--cyan);
+      font-size: .55rem;
+    }
+
+    .status::before {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      background: var(--cyan);
+      box-shadow: 0 0 12px var(--cyan);
+      animation: pulse 1.8s infinite;
+    }
+
+    .game-ui {
+      min-width: 0;
+      padding: clamp(1.4rem, 4vw, 4.5rem) clamp(1.25rem, 5vw, 5.5rem) 3rem;
+    }
+
+    @media (min-width: 901px) {
+      body { overflow: hidden; }
+
+      .shell {
+        height: 100vh;
+        min-height: 0;
+        overflow: hidden;
+      }
+
+      .identity {
+        height: 100vh;
+        min-height: 0;
+        position: relative;
+        contain: layout paint;
+      }
+
+      .game-ui {
+        height: 100vh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        scrollbar-color: var(--purple) rgba(12, 6, 22, .7);
+        scrollbar-width: thin;
+      }
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: clamp(2.5rem, 7vh, 6rem);
+    }
+
+    .brand { font: .62rem/1.4 var(--pixel); color: var(--violet); }
+    .level { color: var(--muted); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+
+    .menu {
+      display: flex;
+      gap: .45rem;
+      margin: 0 0 2.25rem;
+      padding: .45rem;
+      border: 1px solid var(--line);
+      background: rgba(8, 4, 15, .5);
+      box-shadow: 8px 8px 0 rgba(0, 0, 0, .2);
+    }
+
+    .menu button {
+      flex: 1;
+      min-height: 3.25rem;
+      border: 0;
+      padding: .75rem .9rem;
+      cursor: pointer;
+      color: var(--muted);
+      background: transparent;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: color .18s, background .18s, transform .18s;
+    }
+
+    .menu button:hover { color: white; background: rgba(155, 92, 255, .16); }
+    .menu button[aria-selected="true"] { color: #0d0714; background: var(--violet); box-shadow: inset 0 -4px 0 #8c4fc7; }
+    .menu button:focus-visible, .action:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; }
+
+    .screen { animation: load-in .32s ease-out; }
+    .screen[hidden] { display: none; }
+
+    .screen h2 {
+      max-width: 850px;
+      margin: 0;
+      font: 700 clamp(2.6rem, 7vw, 7rem)/.9 var(--ui);
+      letter-spacing: -.06em;
+      text-transform: uppercase;
+    }
+
+    .lede {
+      max-width: 780px;
+      margin: 1.4rem 0 2.6rem;
+      color: var(--muted);
+      font-size: clamp(1.08rem, 1.6vw, 1.35rem);
+      line-height: 1.65;
+    }
+
+    .accent { color: var(--violet); }
+
+    .stats, .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .stat, .project {
+      position: relative;
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(48, 22, 76, .65), rgba(14, 7, 25, .76));
+      box-shadow: inset 4px 0 0 var(--purple);
+    }
+
+    .stat { padding: 1.45rem; }
+    .stat-link { display: block; color: inherit; text-decoration: none; transition: transform .2s, border-color .2s; }
+    .stat-link:hover { transform: translateY(-4px); border-color: var(--cyan); }
+    .stat-link::after { content: "↗"; position: absolute; top: 1rem; right: 1rem; color: var(--cyan); }
+    .stat-label { display: block; margin-bottom: .75rem; color: var(--cyan); font: .55rem var(--pixel); text-transform: uppercase; }
+    .stat p { margin: 0; color: #e3d9ef; line-height: 1.55; }
+
+    .project {
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      overflow: hidden;
+      text-decoration: none;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .project:hover { transform: translateY(-5px); border-color: var(--cyan); }
+    .project::after { content: "↗"; position: absolute; right: 1.2rem; top: 1rem; color: var(--cyan); font-size: 1.35rem; }
+    .project h3 { margin: auto 0 .65rem; font-size: clamp(1.5rem, 2.4vw, 2.3rem); line-height: 1; text-transform: uppercase; }
+    .project p { margin: 0; color: var(--muted); line-height: 1.45; }
+    .project.wide { grid-column: 1 / -1; min-height: 260px; background: linear-gradient(115deg, rgba(93, 42, 142, .75), rgba(17, 8, 30, .8)); }
+
+    .credits { margin-top: 2rem; }
+    .credit-row { display: block; padding: 1.1rem 0; border-bottom: 1px solid var(--line); }
+    .credit-row strong { font-size: 1.12rem; }
+    .credit-row a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; text-decoration: none; }
+    .credit-row a::after { content: "↗"; color: var(--cyan); font-size: 1.1rem; }
+    .credit-row a:hover strong { color: var(--violet); }
+
+    .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+    .action { display: inline-flex; align-items: center; justify-content: center; min-height: 3.4rem; padding: .8rem 1.25rem; border: 1px solid var(--violet); color: white; background: rgba(155, 92, 255, .12); text-decoration: none; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .action.primary { color: #100819; background: var(--violet); }
+    .action:hover { border-color: var(--cyan); }
+
+    .controls { display: flex; gap: 1rem; justify-content: flex-end; margin-top: 3.5rem; color: #82738f; font: .48rem var(--pixel); }
+    .key { display: inline-grid; place-items: center; min-width: 1.7rem; height: 1.7rem; margin-right: .35rem; border: 1px solid #665674; color: var(--muted); }
+
+    @keyframes load-in { from { opacity: 0; transform: translateY(12px); } }
+    @keyframes pulse { 50% { opacity: .35; } }
+
+    @media (max-width: 900px) {
+      .shell { grid-template-columns: 1fr; }
+      .identity { min-height: 430px; height: 52vh; position: relative; padding-bottom: 1.5rem; border-right: 0; border-bottom: 1px solid var(--line); }
+      .portrait-wrap { position: absolute; inset: 2.5rem 0 0 auto; width: min(55%, 360px); margin: 0; }
+      .portrait { height: 100%; max-height: none; }
+      .player-card { width: 60%; margin-top: auto; }
+      .player-card h1 { font-size: clamp(2.2rem, 10vw, 4.5rem); }
+      .game-ui { padding-top: 2rem; }
+      .topbar { margin-bottom: 2rem; }
+    }
+
+    @media (min-width: 2000px) {
+      .shell { grid-template-columns: minmax(760px, 43vw) minmax(0, 1fr); }
+
+      .identity {
+        padding: clamp(3.5rem, 4vw, 6rem) clamp(4rem, 5vw, 8rem);
+      }
+
+      .portrait-wrap {
+        width: min(88%, 850px);
+        margin-top: 2rem;
+      }
+
+      .portrait { max-height: 68vh; }
+
+      .player-card {
+        display: grid;
+        grid-template-columns: minmax(360px, .8fr) 1fr;
+        column-gap: 3rem;
+        align-items: end;
+        padding-top: 1.75rem;
+      }
+
+      .player-card h1 {
+        grid-row: 1 / span 2;
+        font-size: clamp(4.5rem, 5vw, 7rem);
+      }
+
+      .player-card p { margin-top: 0; font-size: clamp(1.15rem, 1vw, 1.55rem); }
+      .status { margin-top: .65rem; }
+
+      .game-ui {
+        display: flex;
+        flex-direction: column;
+        padding: clamp(4rem, 5vw, 7rem) clamp(5rem, 7vw, 10rem);
+      }
+
+      .topbar { margin-bottom: clamp(4rem, 7vh, 7rem); }
+
+      .menu {
+        width: min(100%, 1100px);
+        margin-bottom: clamp(3rem, 5vh, 5rem);
+      }
+
+      .screen { width: min(100%, 1250px); }
+
+      .screen h2 {
+        max-width: 1050px;
+        font-size: clamp(6rem, 5.8vw, 10rem);
+      }
+
+      .lede {
+        max-width: 1000px;
+        font-size: clamp(1.35rem, 1.15vw, 1.8rem);
+      }
+
+      .stats, .project-grid { gap: 1.5rem; }
+      .stat { padding: 2rem; }
+      .stat p, .project p, .credit-row { font-size: 1.2rem; }
+      .project { min-height: 290px; padding: 2rem; }
+      .project.wide { min-height: 340px; }
+      .controls { margin-top: auto; padding-top: 4rem; }
+    }
+
+    @media (max-width: 610px) {
+      .identity { height: 420px; min-height: 420px; }
+      .portrait-wrap { width: 68%; opacity: .8; }
+      .player-card { width: 82%; }
+      .player-card p { max-width: 16rem; }
+      .topbar .level { display: none; }
+      .menu { position: sticky; top: .5rem; z-index: 10; overflow-x: auto; justify-content: flex-start; }
+      .menu button { min-width: 7.6rem; font-size: .8rem; }
+      .stats, .project-grid { grid-template-columns: 1fr; }
+      .project.wide { grid-column: auto; }
+      .screen h2 { font-size: clamp(2.5rem, 15vw, 4.2rem); }
+      .controls { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <aside class="identity" aria-label="Player profile">
+      <div class="portrait-wrap"><img class="portrait" src="oow_pic.jpg" alt="Illustrated portrait of Matt Hurtado"></div>
+      <div class="player-card">
+        <h1>Matt<br>Hurtado</h1>
+        <p>Software Engineer · Radio Host</p>
+        <span class="status">Online // Ready</span>
+      </div>
+    </aside>
+
+    <section class="game-ui">
+      <header class="topbar">
+        <span class="brand">MH_OS v2.0</span>
+        <span class="level">Game services engineer</span>
+      </header>
+
+      <nav class="menu" role="tablist" aria-label="Main menu">
+        <button id="tab-about" role="tab" aria-selected="true" aria-controls="about" data-target="about">About</button>
+        <button id="tab-projects" role="tab" aria-selected="false" aria-controls="projects" data-target="projects">Projects</button>
+        <button id="tab-credits" role="tab" aria-selected="false" aria-controls="credits" data-target="credits">Credits</button>
+        <button id="tab-contact" role="tab" aria-selected="false" aria-controls="contact" data-target="contact">Contact</button>
+      </nav>
+
+      <section class="screen" id="about" role="tabpanel" aria-labelledby="tab-about">
+        <h2>I build the systems <span class="accent">behind the game.</span></h2>
+        <p class="lede">I'm a game industry software engineer specializing in the backend services that keep online worlds running. Off the clock, I host <em>Virtual Soundscapes</em> on Radio Catskill—an hour dedicated to video game music and the people who make it.</p>
+        <div class="stats">
+          <article class="stat"><span class="stat-label">Core build</span><p>C# · .NET · AWS · SQL · Unreal Engine · Unity · Backend &amp; game services</p></article>
+          <a class="stat stat-link" href="https://wjffradio.org/virtual-soundscapes/" target="_blank" rel="noopener"><span class="stat-label">Current broadcast</span><p>Virtual Soundscapes<br>Wednesdays at 9 PM ET</p></a>
+        </div>
+      </section>
+
+      <section class="screen" id="projects" role="tabpanel" aria-labelledby="tab-projects" hidden>
+        <h2>Selected <span class="accent">projects.</span></h2>
+        <p class="lede">Broadcasts, tools, and experiments from the space where games, software, and music overlap.</p>
+        <div class="project-grid">
+          <a class="project wide" href="https://wjffradio.org/virtual-soundscapes/" target="_blank" rel="noopener">
+            <h3>Virtual Soundscapes</h3>
+            <p>A weekly radio show featuring video game music, deep cuts, and conversations with industry professionals.</p>
+          </a>
+          <a class="project wide" href="https://trackforge.fm" target="_blank" rel="noopener">
+            <h3>TrackForge</h3>
+            <p>A desktop app for building, organizing, previewing, and exporting music playlists—originally created to produce Virtual Soundscapes.</p>
+          </a>
+          <a class="project" href="https://github.com/matthurtado" target="_blank" rel="noopener">
+            <h3>Open Source</h3>
+            <p>Code, prototypes, and ongoing side quests on GitHub.</p>
+          </a>
+          <a class="project" href="https://www.linkedin.com/in/matt-hurtado/" target="_blank" rel="noopener">
+            <h3>Career Log</h3>
+            <p>Experience, shipped work, and the full professional timeline.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="screen" id="credits" role="tabpanel" aria-labelledby="tab-credits" hidden>
+        <h2><span class="accent">Credits</span></h2>
+        <p class="lede">A selection of worlds I've helped bring to players throughout my career.</p>
+        <div class="credits">
+          <div class="credit-row"><strong>Marathon</strong></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/245272/tales-of-the-shire-a-the-lord-of-the-rings-game/" target="_blank" rel="noopener"><strong>Tales of the Shire: A The Lord of The Rings Game</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/232763/call-of-duty-black-ops-6/" target="_blank" rel="noopener"><strong>Call of Duty: Black Ops 6</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/220119/call-of-duty-warzone-mobile/" target="_blank" rel="noopener"><strong>Call of Duty: Warzone Mobile</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/211657/call-of-duty-modern-warfare-iii/" target="_blank" rel="noopener"><strong>Call of Duty: Modern Warfare III</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/203994/after-us/" target="_blank" rel="noopener"><strong>After Us</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/208035/the-outer-worlds-spacers-choice-edition/" target="_blank" rel="noopener"><strong>The Outer Worlds: Spacer's Choice Edition</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/199753/kerbal-space-program-2/" target="_blank" rel="noopener"><strong>Kerbal Space Program 2</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/189632/rollerdrome/" target="_blank" rel="noopener"><strong>Rollerdrome</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/179408/olliolli-world/" target="_blank" rel="noopener"><strong>OlliOlli World</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/146884/disintegration/" target="_blank" rel="noopener"><strong>Disintegration</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/119143/the-outer-worlds/" target="_blank" rel="noopener"><strong>The Outer Worlds</strong></a></div>
+          <div class="credit-row"><a href="https://www.mobygames.com/game/133842/ancestors-the-humankind-odyssey/" target="_blank" rel="noopener"><strong>Ancestors: The Humankind Odyssey</strong></a></div>
+        </div>
+        <div class="actions"><a class="action" href="https://www.linkedin.com/in/matt-hurtado/" target="_blank" rel="noopener">Full résumé ↗</a></div>
+      </section>
+
+      <section class="screen" id="contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+        <h2>Let's make <span class="accent">something</span></h2>
+        <p class="lede">Have a project, a radio story, or just a great game soundtrack recommendation? My inbox is open.</p>
+        <div class="actions">
+          <a class="action primary" href="mailto:matt.hurtado@gmail.com">Send a message</a>
+          <a class="action" href="https://github.com/matthurtado" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="action" href="https://www.linkedin.com/in/matt-hurtado/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </section>
+
+      <footer class="controls" aria-hidden="true"><span><i class="key">←</i><i class="key">→</i>Navigate</span><span><i class="key">↵</i>Select</span></footer>
+    </section>
+  </main>
+
+  <script>
+    const tabs = [...document.querySelectorAll('[role="tab"]')];
+    const screens = [...document.querySelectorAll('[role="tabpanel"]')];
+
+    function selectTab(nextTab, updateHash = true) {
+      tabs.forEach(tab => tab.setAttribute('aria-selected', String(tab === nextTab)));
+      screens.forEach(screen => { screen.hidden = screen.id !== nextTab.dataset.target; });
+      if (updateHash) history.replaceState(null, '', `#${nextTab.dataset.target}`);
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectTab(tab));
+      tab.addEventListener('keydown', event => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+        let next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+        tabs[next].focus();
+        selectTab(tabs[next]);
+      });
+    });
+
+    const initial = tabs.find(tab => `#${tab.dataset.target}` === location.hash);
+    if (initial) selectTab(initial, false);
+  </script>
+</body>
+</html>
