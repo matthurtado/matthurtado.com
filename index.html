@@ -295,6 +295,63 @@
     .controls { display: flex; gap: 1rem; justify-content: flex-end; margin-top: 3.5rem; color: #82738f; font: .48rem var(--pixel); }
     .key { display: inline-grid; place-items: center; min-width: 1.7rem; height: 1.7rem; margin-right: .35rem; border: 1px solid #665674; color: var(--muted); }
 
+    .secret-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: clamp(1rem, 4vw, 4rem);
+      overflow-y: auto;
+      background: rgba(4, 1, 8, .94);
+      backdrop-filter: blur(10px);
+    }
+
+    .secret-overlay[hidden] { display: none; }
+
+    .secret-screen {
+      width: min(1100px, 100%);
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(260px, .8fr) minmax(0, 1.2fr);
+      gap: clamp(1.5rem, 4vw, 4rem);
+      padding: clamp(1.25rem, 3vw, 3rem);
+      border: 2px solid var(--violet);
+      background: linear-gradient(145deg, #321253, #0c0616 72%);
+      box-shadow: 0 0 0 6px #090510, 0 0 60px rgba(155, 92, 255, .55);
+      animation: secret-in .45s steps(5, end);
+    }
+
+    .secret-screen::before {
+      content: "SECRET CHARACTER UNLOCKED";
+      position: absolute;
+      top: -1.25rem;
+      left: 1.5rem;
+      padding: .65rem .9rem;
+      color: #090510;
+      background: var(--cyan);
+      font: .55rem var(--pixel);
+    }
+
+    .secret-image {
+      width: 100%;
+      align-self: center;
+      border: 1px solid var(--line);
+      background: #090510;
+      image-rendering: pixelated;
+    }
+
+    .secret-copy h2 { margin: .5rem 0 .7rem; font: 700 clamp(2.5rem, 6vw, 5.5rem)/.88 var(--ui); letter-spacing: -.05em; text-transform: uppercase; }
+    .secret-copy > p { color: var(--muted); font-size: 1.1rem; }
+    .secret-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; margin-top: 1.5rem; }
+    .secret-stat { padding: 1rem; border: 1px solid var(--line); background: rgba(8, 4, 15, .55); }
+    .secret-stat span { display: block; margin-bottom: .55rem; color: var(--pink); font: .48rem var(--pixel); text-transform: uppercase; }
+    .secret-stat strong { color: var(--ink); font-size: 1.05rem; }
+    .secret-close { width: 100%; margin-top: 1rem; border: 1px solid var(--cyan); padding: .9rem; cursor: pointer; color: var(--cyan); background: transparent; font: .55rem var(--pixel); text-transform: uppercase; }
+    .secret-close:hover { color: #090510; background: var(--cyan); }
+
+    @keyframes secret-in { from { opacity: 0; transform: scale(.8) rotate(-2deg); } }
+
     @keyframes load-in { from { opacity: 0; transform: translateY(12px); } }
     @keyframes pulse { 50% { opacity: .35; } }
 
@@ -391,6 +448,9 @@
       .project.wide { grid-column: auto; }
       .screen h2 { font-size: clamp(2.5rem, 15vw, 4.2rem); }
       .controls { display: none; }
+      .secret-screen { grid-template-columns: 1fr; margin-top: 1rem; }
+      .secret-image { max-height: 38vh; object-fit: contain; }
+      .secret-stats { grid-template-columns: 1fr; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -491,6 +551,29 @@
     </section>
   </main>
 
+  <div class="secret-overlay" id="secretOverlay" role="dialog" aria-modal="true" aria-labelledby="secretTitle" hidden>
+    <div class="secret-screen">
+      <img class="secret-image" src="https://matthurtado.com/images/mindflayer.png" alt="Secret Mind Flayer character art">
+      <div class="secret-copy">
+        <h2 id="secretTitle">Maximum Matt</h2>
+        <p>Forbidden character data recovered. Castle Gate protocol engaged.</p>
+        <div class="secret-stats">
+          <div class="secret-stat"><span>Primary class</span><strong>Backend Engineer</strong></div>
+          <div class="secret-stat"><span>Sub class</span><strong>Radio Host</strong></div>
+          <div class="secret-stat"><span>Credits unlocked</span><strong>15</strong></div>
+          <div class="secret-stat"><span>Weekly quest</span><strong>Wednesdays, 9 PM ET</strong></div>
+          <div class="secret-stat"><span>Skill tree</span><strong>C# · .NET · AWS · SQL</strong></div>
+          <div class="secret-stat"><span>Engine affinity</span><strong>Unreal · Unity</strong></div>
+          <div class="secret-stat"><span>Inventory</span><strong>Collection of Skeletors</strong></div>
+          <div class="secret-stat"><span>Familiars</span><strong>Lola and Orby</strong></div>
+        </div>
+        <button class="secret-close" id="secretClose" type="button">Return to title screen</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="secretAudio" src="https://matthurtado.com/assets/castlegate.mp3" preload="none"></audio>
+
   <script>
     const tabs = [...document.querySelectorAll('[role="tab"]')];
     const screens = [...document.querySelectorAll('[role="tabpanel"]')];
@@ -524,6 +607,49 @@
 
     const initial = tabs.find(tab => `#${tab.dataset.target}` === location.hash);
     if (initial) selectTab(initial, false);
+
+    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    const secretOverlay = document.getElementById('secretOverlay');
+    const secretAudio = document.getElementById('secretAudio');
+    const secretClose = document.getElementById('secretClose');
+    let konamiPosition = 0;
+    let lastFocusedElement = null;
+
+    function openSecret() {
+      lastFocusedElement = document.activeElement;
+      secretOverlay.hidden = false;
+      document.body.style.overflow = 'hidden';
+      secretAudio.currentTime = 0;
+      secretAudio.play().catch(() => {});
+      secretClose.focus();
+    }
+
+    function closeSecret() {
+      secretOverlay.hidden = true;
+      document.body.style.overflow = '';
+      secretAudio.pause();
+      secretAudio.currentTime = 0;
+      if (lastFocusedElement) lastFocusedElement.focus();
+    }
+
+    window.addEventListener('keydown', event => {
+      if (!secretOverlay.hidden) {
+        if (event.key === 'Escape') closeSecret();
+        return;
+      }
+
+      const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+      konamiPosition = key === konamiCode[konamiPosition] ? konamiPosition + 1 : (key === konamiCode[0] ? 1 : 0);
+      if (konamiPosition === konamiCode.length) {
+        konamiPosition = 0;
+        openSecret();
+      }
+    });
+
+    secretClose.addEventListener('click', closeSecret);
+    secretOverlay.addEventListener('click', event => {
+      if (event.target === secretOverlay) closeSecret();
+    });
   </script>
 </body>
 </html>
