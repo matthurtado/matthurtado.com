@@ -3,12 +3,13 @@ param(
     [string]$CommitMessage = "Update portfolio website",
     [string]$RemoteDirectory = "/public_html/",
     [string[]]$SetlistPath,
-    [switch]$SkipGit,
+    [Alias("SkipGit")]
+    [switch]$WebsiteOnly,
     [switch]$SkipUpload
 )
 
 $ErrorActionPreference = "Stop"
-$ProjectRoot = $PSScriptRoot
+$ProjectRoot = Split-Path -Parent $PSScriptRoot
 $WinScpSession = "matthurtado.com"
 $GitRemoteUrl = "https://github.com/matthurtado/matthurtado.com.git"
 
@@ -120,7 +121,7 @@ foreach ($sourcePath in @($SetlistPath)) {
 
 Build-SetlistIndex
 
-if (-not $SkipGit) {
+if (-not $WebsiteOnly) {
     Push-Location $ProjectRoot
     try {
         if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot ".git"))) {
