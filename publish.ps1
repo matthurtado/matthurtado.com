@@ -35,7 +35,14 @@ function Build-SetlistIndex {
 
     $episodeArchive = [ordered]@{}
     if (Test-Path -LiteralPath $indexPath) {
-        $existingEpisodes = @(Get-Content -Raw -LiteralPath $indexPath | ConvertFrom-Json)
+        $existingData = Get-Content -Raw -LiteralPath $indexPath | ConvertFrom-Json
+        if ($null -ne $existingData.value -and $null -eq $existingData.episode) {
+            # Migrate indexes produced by older versions that serialized a
+            # PowerShell collection wrapper instead of the underlying array.
+            $existingEpisodes = @($existingData.value)
+        } else {
+            $existingEpisodes = @($existingData)
+        }
         foreach ($existingEpisode in $existingEpisodes) {
             if ($null -ne $existingEpisode -and -not [string]::IsNullOrWhiteSpace([string]$existingEpisode.episode)) {
                 $episodeArchive[[string]$existingEpisode.episode] = $existingEpisode
@@ -44,7 +51,7 @@ function Build-SetlistIndex {
     }
 
     foreach ($csvFile in Get-ChildItem -LiteralPath $setlistDirectory -Filter "*.csv" -File) {
-        $rows = @(Import-Csv -LiteralPath $csvFile.FullName)
+        $rows = @(Import-Csv -LiteralPath $csvFile.FullName -Encoding UTF8)
         if ($rows.Count -eq 0) { continue }
 
         $first = $rows[0]
@@ -74,8 +81,24 @@ function Build-SetlistIndex {
         }
     }
 
-    $sortedEpisodes = @($episodeArchive.Values | Sort-Object -Property @{ Expression = { if ([string]$_.episode -match '\d+') { [int]$Matches[0] } else { 0 } }; Descending = $true }, @{ Expression = { [string]$_.episode }; Descending = $true })
-    ConvertTo-Json -InputObject $sortedEpisodes -Depth 6 | Set-Content -LiteralPath $indexPath -Encoding utf8
+    $archivedEpisodes = @($episodeArchive.GetEnumerator() | ForEach-Object { $_.Value })
+    $sortedEpisodes = @($archivedEpisodes | Sort-Object -Property @{ Expression = { if ([string]$_.episode -match '\d+') { [int]$Matches[0] } else { 0 } }; Descending = $true }, @{ Expression = { [string]$_.episode }; Descending = $true })
+    $json = ConvertTo-Json -InputObject ([object[]]$sortedEpisodes) -Depth 6
+    [System.IO.File]::WriteAllText($indexPath, $json, [System.Text.UTF8Encoding]::new($false))
+
+    $validationData = Get-Content -Raw -LiteralPath $indexPath | ConvertFrom-Json
+    $validatedEpisodes = @($validationData)
+    if ($validatedEpisodes.Count -ne $sortedEpisodes.Count) {
+        throw "Setlist index validation failed: expected $($sortedEpisodes.Count) episodes, found $($validatedEpisodes.Count)."
+    }
+    if (@($validatedEpisodes | Where-Object { [string]::IsNullOrWhiteSpace([string]$_.episode) }).Count -gt 0) {
+        throw "Setlist index validation failed: an episode has no episode number."
+    }
+
+    $indexBytes = [System.IO.File]::ReadAllBytes($indexPath)
+    if ($indexBytes.Length -ge 3 -and $indexBytes[0] -eq 0xEF -and $indexBytes[1] -eq 0xBB -and $indexBytes[2] -eq 0xBF) {
+        throw "Setlist index validation failed: index.json contains a UTF-8 byte-order mark."
+    }
 }
 
 if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot "index.html"))) {
