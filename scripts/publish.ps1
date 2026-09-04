@@ -141,8 +141,23 @@ if (-not $WebsiteOnly) {
             }
         }
 
-        git add --all
+        $websitePaths = @(
+            "index.html",
+            "oow_pic.jpg",
+            "favicon.svg",
+            "README.md",
+            ".gitignore",
+            "scripts/publish.ps1",
+            "setlists/index.json"
+        )
+        git add -- $websitePaths
         if ($LASTEXITCODE -ne 0) { throw "Git staging failed with exit code $LASTEXITCODE." }
+
+        $setlistCsvFiles = @(Get-ChildItem -LiteralPath $setlistDirectory -Filter "*.csv" -File)
+        foreach ($setlistCsvFile in $setlistCsvFiles) {
+            git add -- $setlistCsvFile.FullName
+            if ($LASTEXITCODE -ne 0) { throw "Git staging failed for $($setlistCsvFile.Name)." }
+        }
 
         git diff --cached --quiet
         if ($LASTEXITCODE -eq 0) {

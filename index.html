@@ -64,7 +64,7 @@
       min-height: 100vh;
       margin: auto;
       display: grid;
-      grid-template-columns: minmax(360px, 38vw) minmax(0, 1fr);
+      grid-template-columns: minmax(280px, 28vw) minmax(0, 1fr);
     }
 
     .identity {
@@ -99,7 +99,7 @@
     }
 
     .portrait-wrap {
-      width: min(90%, 620px);
+      width: min(88%, 520px);
       min-height: 0;
       flex: 1;
       position: relative;
@@ -385,52 +385,47 @@
     }
 
     @media (min-width: 2000px) {
-      .shell { grid-template-columns: minmax(760px, 43vw) minmax(0, 1fr); }
+      .shell { grid-template-columns: minmax(620px, 25vw) minmax(0, 1fr); }
 
       .identity {
-        padding: clamp(3.5rem, 4vw, 6rem) clamp(4rem, 5vw, 8rem);
+        padding: clamp(3rem, 3vw, 5rem);
       }
 
       .portrait-wrap {
-        width: min(88%, 850px);
+        width: min(90%, 560px);
         margin-top: 2rem;
       }
 
       .portrait { max-height: 68vh; }
 
       .player-card {
-        display: grid;
-        grid-template-columns: minmax(360px, .8fr) 1fr;
-        column-gap: 3rem;
-        align-items: end;
         padding-top: 1.75rem;
       }
 
       .player-card h1 {
-        grid-row: 1 / span 2;
-        font-size: clamp(4.5rem, 5vw, 7rem);
+        font-size: clamp(3.7rem, 3.7vw, 5.5rem);
       }
 
-      .player-card p { margin-top: 0; font-size: clamp(1.15rem, 1vw, 1.55rem); }
-      .status { margin-top: .65rem; }
+      .player-card p { font-size: clamp(1rem, .85vw, 1.3rem); }
+      .status { margin-top: 1rem; }
 
       .game-ui {
         display: flex;
         flex-direction: column;
-        padding: clamp(4rem, 5vw, 7rem) clamp(5rem, 7vw, 10rem);
+        padding: clamp(4rem, 5vw, 7rem) clamp(4rem, 4vw, 7rem);
       }
 
       .topbar { margin-bottom: clamp(4rem, 7vh, 7rem); }
 
       .menu {
-        width: min(100%, 1100px);
+        width: 100%;
         margin-bottom: clamp(3rem, 5vh, 5rem);
       }
 
-      .screen { width: min(100%, 1250px); }
+      .screen { width: 100%; }
 
       .screen h2 {
-        max-width: 1050px;
+        max-width: 1400px;
         font-size: clamp(6rem, 5.8vw, 10rem);
       }
 
@@ -443,7 +438,7 @@
       .stat { padding: 2rem; }
       .stat p, .project p, .credit-row { font-size: 1.2rem; }
       .project { min-height: 290px; padding: 2rem; }
-      .project.wide { min-height: 340px; }
+      .project.wide { grid-column: auto; min-height: 340px; }
       .controls { margin-top: auto; padding-top: 4rem; }
     }
 

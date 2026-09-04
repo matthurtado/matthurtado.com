@@ -1,841 +1,841 @@
 [
-    {
-        "episode":  "62",
-        "theme":  "Grand Theft Auto - Miami",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "Waiting for a Girl Like You",
-                           "artist":  "Foreigner",
-                           "album":  "Rock of Ages (2009 original Broadway cast)"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "Love Bites",
-                           "artist":  "Def Leppard",
-                           "album":  "Rock of Ages: The DVD Collection"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "Cars and Girls",
-                           "artist":  "Prefab Sprout",
-                           "album":  "1990-10-15: Guildhall, Portsmouth, UK"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "People Are People",
-                           "artist":  "Götz Alsmann \u0026 The Sentimental Pounders",
-                           "album":  "Pop Swings!"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "But I Think It\u0027s a Dream",
-                           "artist":  "Captain \u0026 Tennille",
-                           "album":  "Keeping Our Love Warm"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "Devil Woman",
-                           "artist":  "Cliff Richard",
-                           "album":  "Songwriters Speak"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "Against All Odds",
-                           "artist":  "Phil Collins",
-                           "album":  "In Concert"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "Mine O\u0027 Mine",
-                           "artist":  "Aluna; Jayda G",
-                           "album":  "MYCELiUM"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Inner Light",
-                           "artist":  "Elderbrook; Bob Moses",
-                           "album":  "Totally Dancev"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Let Your Love Flow",
-                           "artist":  "The Bellamy Brothers",
-                           "album":  "Best of the Best, Volume 2"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "Out of Touch",
-                           "artist":  "Hall \u0026 Oates",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "I Just Died in Your Arms",
-                           "artist":  "Resource",
-                           "album":  "Pioneer: The Album, Volume 3"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "13",
-                           "title":  "Expansions",
-                           "artist":  "Lonnie Liston Smith",
-                           "album":  "Jazz Moods 2"
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "14",
-                           "title":  "Kool \u0026 The Gang - Summer Madness",
-                           "artist":  "DJ Jedi",
-                           "album":  ""
-                       }
-                   ]
-    },
-    {
-        "episode":  "61",
-        "theme":  "Assorted Video Game Music (2025-2026)",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "Lullaby of the Manifold",
-                           "artist":  "Warframe",
-                           "album":  "Lullaby of the Manifold"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "DAMIDAMI",
-                           "artist":  "Sihan, Sān-Z",
-                           "album":  "Zenless Zone Zero - DAMIDAMI"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "Tharsis Bossa",
-                           "artist":  "Michael Salvatori, C Paul Johnson, and Skye Lewin",
-                           "album":  "Destiny 2: Renegades (Original Game Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "Never More",
-                           "artist":  "Shihoko Hirata",
-                           "album":  "Persona 4 Golden (Steam): Digital Deluxe Soundtrack"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "To the Wilder feat. Elle Fanning",
-                           "artist":  "Woodkid;Elle Fanning",
-                           "album":  "WOODKID FOR DEATH STRANDING 2: ON THE BEACH"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "The Full Story",
-                           "artist":  "Olivier Deriviere",
-                           "album":  "South of Midnight (Original Game Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "Echoes of the End",
-                           "artist":  "Bandai Namco Game Music",
-                           "album":  "Ace Combat X: Skies of Deception (Original Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "STRANGER THAN HEAVEN： Main Theme Song feat. Snoop Dog",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Zero Parades -Fogged Mirror",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Cairn - Only the Mountain",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "Promise Mascot Agency  -Straight To The Sea",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "RV THERE YET - Run Winnebago Run",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "13",
-                           "title":  "RV THERE YeT - Tiramisu, I Love You",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "14",
-                           "title":  "I am Bread - Garden Music",
-                           "artist":  "",
-                           "album":  ""
-                       }
-                   ]
-    },
-    {
-        "episode":  "60",
-        "theme":  "Dealing With Grief",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "Dearly Beloved",
-                           "artist":  "Kaoru Wada",
-                           "album":  "Kingdom Hearts HD 2.5 ReMIX Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "END TITLE / THE BEST IS YET TO COME",
-                           "artist":  "Aoife Ní Fhearraigh / Rika Muranaka",
-                           "album":  "METAL GEAR SOLID Music CD"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "Our Light",
-                           "artist":  "",
-                           "album":  "PERSONA 5 ROYAL THE SOUNDTRACK (2020"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "Never Forget",
-                           "artist":  "Martin O\u0027Donnell;Michael Salvatori",
-                           "album":  "Halo 3 Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "Mother, I\u0027m Here (Zulf\u0027s Theme)",
-                           "artist":  "Darren Korb",
-                           "album":  "Bastion Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "We All Become",
-                           "artist":  "Darren Korb",
-                           "album":  "Transistor: Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "I was Born for This",
-                           "artist":  "Austin Wintory",
-                           "album":  "Journey"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "Everything\u0027s Alright",
-                           "artist":  "Laura Shigihara",
-                           "album":  "To the Moon Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Memories of You -Reload-",
-                           "artist":  "Azumi Takahashi / ATLUS Sound Team / ATLUS GAME MUSIC",
-                           "album":  "Persona 3 Reload Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Good Riddance (ft. Ashley Barrett)",
-                           "artist":  "Darren Korb",
-                           "album":  "Hades: Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "BB\u0027s Theme (2022) (feat. Troy Baker)",
-                           "artist":  "Ludvig Forssell, Troy Baker",
-                           "album":  "Death Stranding 2: On The Beach (Original Video Game Score)"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "What Will You Leave Behind (End Titles) [feat. Maude Plante-Husaruk]",
-                           "artist":  "Max LL",
-                           "album":  "Spiritfarer (Original Soundtrack) [Farewell Edition]"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "13",
-                           "title":  "Nier Automata - Weight of the World - Marina Kawano",
-                           "artist":  "",
-                           "album":  "Nier Automata"
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "14",
-                           "title":  "Nier Replicant - Ashes of Dreams ⧸ English Version",
-                           "artist":  "",
-                           "album":  "Nier Replicant"
-                       }
-                   ]
-    },
-    {
-        "episode":  "59",
-        "theme":  "Chill Nights",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "2.30AM (VHS skyline)",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 5",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 8",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "52Hz (feat. RAY)",
-                           "artist":  "Artive Sound",
-                           "album":  "52Hz (Original Game Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "1993 Space Machine - Forest",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "1993 Space Machine - Level 1",
-                           "artist":  "",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "Forgotten Forest (Levels)",
-                           "artist":  "Carl Larsson",
-                           "album":  "Akimbo: Kung-Fu Hero"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "Main Menu",
-                           "artist":  "Carl Larsson",
-                           "album":  "Akimbo: Kung-Fu Hero"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Persona 3 Reload FeMC Mod ost:A night Wanderer",
-                           "artist":  "Bloo\u0026Booette; the princess booOST sisters channel",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Evening Theme",
-                           "artist":  "Garrett Williamson",
-                           "album":  "Date Everything! (Official Game Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "Moonsurgent (Connie\u0027s Theme)",
-                           "artist":  "Fearofdark",
-                           "album":  "Date Everything! (Official Game Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "More Friends (Second Spirit Theme Suite)",
-                           "artist":  "Max LL",
-                           "album":  "Spiritfarer (Original Soundtrack) [Farewell Edition]"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "13",
-                           "title":  "Falling asleep to the sound of rain",
-                           "artist":  "glaciære",
-                           "album":  "hammock"
-                       },
-                       {
-                           "set":  "Set 5",
-                           "number":  "14",
-                           "title":  "Persona 3 Reload FeMC Mod ost:Time (Night version)",
-                           "artist":  "Bloo\u0026Booette; the princess booOST sisters channel",
-                           "album":  "Persona 3 Reload FeMC Mod ost:Time (Night version)"
-                       },
-                       {
-                           "set":  "Set 5",
-                           "number":  "15",
-                           "title":  "Same Old Story (Instrumental)",
-                           "artist":  "Joel Baylis",
-                           "album":  "Cassette Beasts (Original Soundtrack)"
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "16",
-                           "title":  "Wherever We Are Now",
-                           "artist":  "Joel Baylis",
-                           "album":  "Cassette Beasts (Original Soundtrack)"
-                       }
-                   ]
-    },
-    {
-        "episode":  "58",
-        "theme":  "Game of the Year Nominees",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "L\u0027Amour d\u0027une Mère",
-                           "artist":  "Lorien Testard \u0026 Alice Duport-Percier",
-                           "album":  "Clair Obscur Expedition 33 Original Soundtrack (Act II)"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "Paintress",
-                           "artist":  "Lorien Testard \u0026 Alice Duport-Percier",
-                           "album":  "Clair Obscur Expedition 33 Original Soundtrack (Act II)"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "Drifters- Ii Yu Dana (Nice Hot Water)",
-                           "artist":  "Notapplicable Provided",
-                           "album":  "Drifters- Ii Yu Dana (Nice Hot Water)"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "Horizon Dreamer",
-                           "artist":  "Daichi Miura",
-                           "album":  "Death Stranding 2 - Horizon Dreamer"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "BB\u0027s Theme (Instrumental)",
-                           "artist":  "Ludvig Forssell",
-                           "album":  "Death Stranding Original Score Volume 2"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "The Crossroads",
-                           "artist":  "Darren Korb",
-                           "album":  "Hades II (Original Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "Sprigs of Sorrow",
-                           "artist":  "Darren Korb",
-                           "album":  "Hades II (Original Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "Greymoor",
-                           "artist":  "Christopher Larkin",
-                           "album":  "Hollow Knight: Silksong (Original Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Awakening",
-                           "artist":  "Christopher Larkin",
-                           "album":  "Hollow Knight: Silksong (Original Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Bone Bottom",
-                           "artist":  "Christopher Larkin",
-                           "album":  "Hollow Knight: Silksong (Original Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "Saint Barbara Theme",
-                           "artist":  "Jan Valta",
-                           "album":  "Kingdom Come: Deliverance II - OST Essentials"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "Kuttenberg Market",
-                           "artist":  "Jan Valta",
-                           "album":  "Kingdom Come: Deliverance II - OST Essentials"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "13",
-                           "title":  "Soldier\u0027s Camp",
-                           "artist":  "Jan Valta",
-                           "album":  "Kingdom Come: Deliverance II - OST Essentials"
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "14",
-                           "title":  "Nameless Traveler",
-                           "artist":  "SEGA Sound Team",
-                           "album":  "Like a Dragon: Pirate Yakuza in Hawaii (Original Soundtrack)"
-                       }
-                   ]
-    },
-    {
-        "episode":  "57",
-        "theme":  "Twisted Metal (TV Show \u0026 Game)",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "Paint It Black",
-                           "artist":  "The Rolling Stones",
-                           "album":  "Paint It Black / Lady Jane"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "The Coliseum (TMHO)",
-                           "artist":  "Various Artists",
-                           "album":  "Twisted Metal Symphony"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "Los Angeles (TMHO)",
-                           "artist":  "Various Artists",
-                           "album":  "Twisted Metal Symphony"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "Red Square (TMHO)",
-                           "artist":  "Various Artists",
-                           "album":  "Twisted Metal Symphony"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "Champagne Supernova",
-                           "artist":  "Oasis",
-                           "album":  "Back Where We Belong"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "Steal My Sunshine",
-                           "artist":  "LEN",
-                           "album":  "Class of 02: Songs for Schoolies"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "Better Off Alone (Jam-X \u0026 Dumonde remix)",
-                           "artist":  "Alice DJ; JamX; DuMonde",
-                           "album":  "Back in My Life"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "My Immortal",
-                           "artist":  "Evanescence",
-                           "album":  "Bravo Hits 46"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Party Hard",
-                           "artist":  "Andrew W.K.",
-                           "album":  "I Get Wet"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Flagpole Sitta",
-                           "artist":  "Austin Hartley-Leonard",
-                           "album":  "Everywhere I\u0027ve Never Been"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "What Is Love (7\" Mix)",
-                           "artist":  "Haddaway - Topic",
-                           "album":  "What Is Love (7\" Mix)"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "Tokyo Streets Revisited (TMHO)",
-                           "artist":  "Various Artists",
-                           "album":  "Twisted Metal Symphony"
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "13",
-                           "title":  "Bon Voyage (TMHO)",
-                           "artist":  "Various Artists",
-                           "album":  "Twisted Metal Symphony"
-                       }
-                   ]
-    },
-    {
-        "episode":  "56",
-        "theme":  "Horror Special (2025)",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "Theme Of Laura (from \"Silent Hill 2\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 3"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "U Got That (From \"Helltaker\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 6"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "Build Our Machine (From \"Bendy And The Ink Machine\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 6"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "Can\u0027t Be Erased (From \"Bendy And The Ink Machine\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 6"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "Portal 2 : End Credits : Want You Gone",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 4"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "Join Us For A Bite (From \"Five Nights At Freddy\u0027s - Sister Location\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 6"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "You Can\u0027t Hide (From \"Five Nights At Freddy\u0027s - Sister Location\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 6"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "Five Nights At Freddy\u0027s 1 (From \"Five Nights At Freddy\u0027s\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 6"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Never Say Never The Animation (From \"Danganronpa\")",
-                           "artist":  "Geek Music",
-                           "album":  "The Best Video Game Music, Vol. 6"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Rambley Review",
-                           "artist":  "RecD \u0026 Jakeneutron feat. OtterBoyVA",
-                           "album":  "Indigo Park, Chapter 1 (Original Game Soundtrack)"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "Silent Hill F - Soundtrack - Hougejaku",
-                           "artist":  "Ruba",
-                           "album":  "Silent Hill F - Soundtrack - Hougejaku"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "Silent Hill F - Soundtrack - The Bird\u0027s Lament",
-                           "artist":  "Ruba",
-                           "album":  "Silent Hill F - Soundtrack - The Bird\u0027s Lament"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "13",
-                           "title":  "Silent Hill F - Soundtrack - The Wet Garden, Corridors of Darkness",
-                           "artist":  "Ruba",
-                           "album":  "Silent Hill F - Soundtrack - The Wet Garden, Corridors of Darkness"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "14",
-                           "title":  "Silent Hill F - Soundtrack - TSUKIYONOINERIME",
-                           "artist":  "Ruba",
-                           "album":  "Silent Hill F - Soundtrack - TSUKIYONOINERIME"
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "15",
-                           "title":  "LITTLE NIGHTMARES 3 SONG | Rockit Music",
-                           "artist":  "Rockit Music",
-                           "album":  "LITTLE NIGHTMARES 3 SONG | Rockit Music"
-                       }
-                   ]
-    },
-    {
-        "episode":  "52",
-        "theme":  "Warframe",
-        "tracks":  [
-                       {
-                           "set":  "Intro",
-                           "number":  "01",
-                           "title":  "We All Lift Together",
-                           "artist":  "Warframe",
-                           "album":  "Warframe | We All Lift Together"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "02",
-                           "title":  "Warframe | **SPOILER WARNING** | ‘For Narmer’ Official Song",
-                           "artist":  "PlayWarframe",
-                           "album":  "Warframe | **SPOILER WARNING** | ‘For Narmer’ Official Song"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "03",
-                           "title":  "TennoCon 2025 | \"Lullaby of the Manifold\" (Official Music Video)",
-                           "artist":  "PlayWarframe",
-                           "album":  "TennoCon 2025 | \"Lullaby of the Manifold\" (Official Music Video)"
-                       },
-                       {
-                           "set":  "Set 1",
-                           "number":  "04",
-                           "title":  "Warframe - PARTY OF YOUR LIFETIME_ (Official Audio Visualizer",
-                           "artist":  "Warframe",
-                           "album":  "Warframe 1999"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "05",
-                           "title":  "Symphony of Boreal Wind",
-                           "artist":  "Yu-Peng Chen",
-                           "album":  "GENSHIN IMPACT - City of Winds and Idylls"
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "06",
-                           "title":  "Sleeping In The Cold Below (From \"Warframe\")",
-                           "artist":  "Warframe",
-                           "album":  ""
-                       },
-                       {
-                           "set":  "Set 2",
-                           "number":  "07",
-                           "title":  "Arisa",
-                           "artist":  "井上馨太",
-                           "album":  "STELLAR BLADE ORIGINAL SOUNDTRACK"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "08",
-                           "title":  "Mothersphere",
-                           "artist":  "井上馨太",
-                           "album":  "STELLAR BLADE ORIGINAL SOUNDTRACK"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "09",
-                           "title":  "Shelter (Title)",
-                           "artist":  "Oliver Good",
-                           "album":  "STELLAR BLADE ORIGINAL SOUNDTRACK"
-                       },
-                       {
-                           "set":  "Set 3",
-                           "number":  "10",
-                           "title":  "Color Your Night",
-                           "artist":  "Lotus Juice / 高橋あず美",
-                           "album":  "Persona 3 Reload Limited Box Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "11",
-                           "title":  "キミの記憶 -Reload-",
-                           "artist":  "高橋あず美",
-                           "album":  "Persona 3 Reload Limited Box Original Soundtrack"
-                       },
-                       {
-                           "set":  "Set 4",
-                           "number":  "12",
-                           "title":  "Wuthering Waves - De Anima On the Soul",
-                           "artist":  "jixwang",
-                           "album":  "Wuthering Waves"
-                       },
-                       {
-                           "set":  "Outro",
-                           "number":  "13",
-                           "title":  "Fountain of Dreams",
-                           "artist":  "Nintendo \u0026 HAL Laboratory, Inc.",
-                           "album":  "Kirby Air Ride - Unofficial Soundtrack"
-                       }
-                   ]
-    }
+  {
+    "episode": "62",
+    "theme": "Grand Theft Auto - Miami",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "Waiting for a Girl Like You",
+        "artist": "Foreigner",
+        "album": "Rock of Ages (2009 original Broadway cast)"
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "Love Bites",
+        "artist": "Def Leppard",
+        "album": "Rock of Ages: The DVD Collection"
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "Cars and Girls",
+        "artist": "Prefab Sprout",
+        "album": "1990-10-15: Guildhall, Portsmouth, UK"
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "People Are People",
+        "artist": "Götz Alsmann & The Sentimental Pounders",
+        "album": "Pop Swings!"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "But I Think It's a Dream",
+        "artist": "Captain & Tennille",
+        "album": "Keeping Our Love Warm"
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "Devil Woman",
+        "artist": "Cliff Richard",
+        "album": "Songwriters Speak"
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "Against All Odds",
+        "artist": "Phil Collins",
+        "album": "In Concert"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "Mine O' Mine",
+        "artist": "Aluna; Jayda G",
+        "album": "MYCELiUM"
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Inner Light",
+        "artist": "Elderbrook; Bob Moses",
+        "album": "Totally Dancev"
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Let Your Love Flow",
+        "artist": "The Bellamy Brothers",
+        "album": "Best of the Best, Volume 2"
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "Out of Touch",
+        "artist": "Hall & Oates",
+        "album": ""
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "I Just Died in Your Arms",
+        "artist": "Resource",
+        "album": "Pioneer: The Album, Volume 3"
+      },
+      {
+        "set": "Set 4",
+        "number": "13",
+        "title": "Expansions",
+        "artist": "Lonnie Liston Smith",
+        "album": "Jazz Moods 2"
+      },
+      {
+        "set": "Outro",
+        "number": "14",
+        "title": "Kool & The Gang - Summer Madness",
+        "artist": "DJ Jedi",
+        "album": ""
+      }
+    ]
+  },
+  {
+    "episode": "61",
+    "theme": "Assorted Video Game Music (2025-2026)",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "Lullaby of the Manifold",
+        "artist": "Warframe",
+        "album": "Lullaby of the Manifold"
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "DAMIDAMI",
+        "artist": "Sihan, Sān-Z",
+        "album": "Zenless Zone Zero - DAMIDAMI"
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "Tharsis Bossa",
+        "artist": "Michael Salvatori, C Paul Johnson, and Skye Lewin",
+        "album": "Destiny 2: Renegades (Original Game Soundtrack)"
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "Never More",
+        "artist": "Shihoko Hirata",
+        "album": "Persona 4 Golden (Steam): Digital Deluxe Soundtrack"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "To the Wilder feat. Elle Fanning",
+        "artist": "Woodkid;Elle Fanning",
+        "album": "WOODKID FOR DEATH STRANDING 2: ON THE BEACH"
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "The Full Story",
+        "artist": "Olivier Deriviere",
+        "album": "South of Midnight (Original Game Soundtrack)"
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "Echoes of the End",
+        "artist": "Bandai Namco Game Music",
+        "album": "Ace Combat X: Skies of Deception (Original Soundtrack)"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "STRANGER THAN HEAVEN： Main Theme Song feat. Snoop Dog",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Zero Parades -Fogged Mirror",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Cairn - Only the Mountain",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "Promise Mascot Agency  -Straight To The Sea",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "RV THERE YET - Run Winnebago Run",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 4",
+        "number": "13",
+        "title": "RV THERE YeT - Tiramisu, I Love You",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Outro",
+        "number": "14",
+        "title": "I am Bread - Garden Music",
+        "artist": "",
+        "album": ""
+      }
+    ]
+  },
+  {
+    "episode": "60",
+    "theme": "Dealing With Grief",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "Dearly Beloved",
+        "artist": "Kaoru Wada",
+        "album": "Kingdom Hearts HD 2.5 ReMIX Original Soundtrack"
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "END TITLE / THE BEST IS YET TO COME",
+        "artist": "Aoife Ní Fhearraigh / Rika Muranaka",
+        "album": "METAL GEAR SOLID Music CD"
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "Our Light",
+        "artist": "",
+        "album": "PERSONA 5 ROYAL THE SOUNDTRACK (2020"
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "Never Forget",
+        "artist": "Martin O'Donnell;Michael Salvatori",
+        "album": "Halo 3 Original Soundtrack"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "Mother, I'm Here (Zulf's Theme)",
+        "artist": "Darren Korb",
+        "album": "Bastion Original Soundtrack"
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "We All Become",
+        "artist": "Darren Korb",
+        "album": "Transistor: Original Soundtrack"
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "I was Born for This",
+        "artist": "Austin Wintory",
+        "album": "Journey"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "Everything's Alright",
+        "artist": "Laura Shigihara",
+        "album": "To the Moon Original Soundtrack"
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Memories of You -Reload-",
+        "artist": "Azumi Takahashi / ATLUS Sound Team / ATLUS GAME MUSIC",
+        "album": "Persona 3 Reload Original Soundtrack"
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Good Riddance (ft. Ashley Barrett)",
+        "artist": "Darren Korb",
+        "album": "Hades: Original Soundtrack"
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "BB's Theme (2022) (feat. Troy Baker)",
+        "artist": "Ludvig Forssell, Troy Baker",
+        "album": "Death Stranding 2: On The Beach (Original Video Game Score)"
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "What Will You Leave Behind (End Titles) [feat. Maude Plante-Husaruk]",
+        "artist": "Max LL",
+        "album": "Spiritfarer (Original Soundtrack) [Farewell Edition]"
+      },
+      {
+        "set": "Set 4",
+        "number": "13",
+        "title": "Nier Automata - Weight of the World - Marina Kawano",
+        "artist": "",
+        "album": "Nier Automata"
+      },
+      {
+        "set": "Outro",
+        "number": "14",
+        "title": "Nier Replicant - Ashes of Dreams ⧸ English Version",
+        "artist": "",
+        "album": "Nier Replicant"
+      }
+    ]
+  },
+  {
+    "episode": "59",
+    "theme": "Chill Nights",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "2.30AM (VHS skyline)",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 5",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 8",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "52Hz (feat. RAY)",
+        "artist": "Artive Sound",
+        "album": "52Hz (Original Game Soundtrack)"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "1993 Space Machine - Forest",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "1993 Space Machine - Level 1",
+        "artist": "",
+        "album": ""
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "Forgotten Forest (Levels)",
+        "artist": "Carl Larsson",
+        "album": "Akimbo: Kung-Fu Hero"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "Main Menu",
+        "artist": "Carl Larsson",
+        "album": "Akimbo: Kung-Fu Hero"
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Persona 3 Reload FeMC Mod ost:A night Wanderer",
+        "artist": "Bloo&Booette; the princess booOST sisters channel",
+        "album": ""
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Evening Theme",
+        "artist": "Garrett Williamson",
+        "album": "Date Everything! (Official Game Soundtrack)"
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "Moonsurgent (Connie's Theme)",
+        "artist": "Fearofdark",
+        "album": "Date Everything! (Official Game Soundtrack)"
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "More Friends (Second Spirit Theme Suite)",
+        "artist": "Max LL",
+        "album": "Spiritfarer (Original Soundtrack) [Farewell Edition]"
+      },
+      {
+        "set": "Set 4",
+        "number": "13",
+        "title": "Falling asleep to the sound of rain",
+        "artist": "glaciære",
+        "album": "hammock"
+      },
+      {
+        "set": "Set 5",
+        "number": "14",
+        "title": "Persona 3 Reload FeMC Mod ost:Time (Night version)",
+        "artist": "Bloo&Booette; the princess booOST sisters channel",
+        "album": "Persona 3 Reload FeMC Mod ost:Time (Night version)"
+      },
+      {
+        "set": "Set 5",
+        "number": "15",
+        "title": "Same Old Story (Instrumental)",
+        "artist": "Joel Baylis",
+        "album": "Cassette Beasts (Original Soundtrack)"
+      },
+      {
+        "set": "Outro",
+        "number": "16",
+        "title": "Wherever We Are Now",
+        "artist": "Joel Baylis",
+        "album": "Cassette Beasts (Original Soundtrack)"
+      }
+    ]
+  },
+  {
+    "episode": "58",
+    "theme": "Game of the Year Nominees",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "L'Amour d'une Mère",
+        "artist": "Lorien Testard & Alice Duport-Percier",
+        "album": "Clair Obscur Expedition 33 Original Soundtrack (Act II)"
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "Paintress",
+        "artist": "Lorien Testard & Alice Duport-Percier",
+        "album": "Clair Obscur Expedition 33 Original Soundtrack (Act II)"
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "Drifters- Ii Yu Dana (Nice Hot Water)",
+        "artist": "Notapplicable Provided",
+        "album": "Drifters- Ii Yu Dana (Nice Hot Water)"
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "Horizon Dreamer",
+        "artist": "Daichi Miura",
+        "album": "Death Stranding 2 - Horizon Dreamer"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "BB's Theme (Instrumental)",
+        "artist": "Ludvig Forssell",
+        "album": "Death Stranding Original Score Volume 2"
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "The Crossroads",
+        "artist": "Darren Korb",
+        "album": "Hades II (Original Soundtrack)"
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "Sprigs of Sorrow",
+        "artist": "Darren Korb",
+        "album": "Hades II (Original Soundtrack)"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "Greymoor",
+        "artist": "Christopher Larkin",
+        "album": "Hollow Knight: Silksong (Original Soundtrack)"
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Awakening",
+        "artist": "Christopher Larkin",
+        "album": "Hollow Knight: Silksong (Original Soundtrack)"
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Bone Bottom",
+        "artist": "Christopher Larkin",
+        "album": "Hollow Knight: Silksong (Original Soundtrack)"
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "Saint Barbara Theme",
+        "artist": "Jan Valta",
+        "album": "Kingdom Come: Deliverance II - OST Essentials"
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "Kuttenberg Market",
+        "artist": "Jan Valta",
+        "album": "Kingdom Come: Deliverance II - OST Essentials"
+      },
+      {
+        "set": "Set 4",
+        "number": "13",
+        "title": "Soldier's Camp",
+        "artist": "Jan Valta",
+        "album": "Kingdom Come: Deliverance II - OST Essentials"
+      },
+      {
+        "set": "Outro",
+        "number": "14",
+        "title": "Nameless Traveler",
+        "artist": "SEGA Sound Team",
+        "album": "Like a Dragon: Pirate Yakuza in Hawaii (Original Soundtrack)"
+      }
+    ]
+  },
+  {
+    "episode": "57",
+    "theme": "Twisted Metal (TV Show & Game)",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "Paint It Black",
+        "artist": "The Rolling Stones",
+        "album": "Paint It Black / Lady Jane"
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "The Coliseum (TMHO)",
+        "artist": "Various Artists",
+        "album": "Twisted Metal Symphony"
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "Los Angeles (TMHO)",
+        "artist": "Various Artists",
+        "album": "Twisted Metal Symphony"
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "Red Square (TMHO)",
+        "artist": "Various Artists",
+        "album": "Twisted Metal Symphony"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "Champagne Supernova",
+        "artist": "Oasis",
+        "album": "Back Where We Belong"
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "Steal My Sunshine",
+        "artist": "LEN",
+        "album": "Class of 02: Songs for Schoolies"
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "Better Off Alone (Jam-X & Dumonde remix)",
+        "artist": "Alice DJ; JamX; DuMonde",
+        "album": "Back in My Life"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "My Immortal",
+        "artist": "Evanescence",
+        "album": "Bravo Hits 46"
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Party Hard",
+        "artist": "Andrew W.K.",
+        "album": "I Get Wet"
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Flagpole Sitta",
+        "artist": "Austin Hartley-Leonard",
+        "album": "Everywhere I've Never Been"
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "What Is Love (7\" Mix)",
+        "artist": "Haddaway - Topic",
+        "album": "What Is Love (7\" Mix)"
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "Tokyo Streets Revisited (TMHO)",
+        "artist": "Various Artists",
+        "album": "Twisted Metal Symphony"
+      },
+      {
+        "set": "Outro",
+        "number": "13",
+        "title": "Bon Voyage (TMHO)",
+        "artist": "Various Artists",
+        "album": "Twisted Metal Symphony"
+      }
+    ]
+  },
+  {
+    "episode": "56",
+    "theme": "Horror Special (2025)",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "Theme Of Laura (from \"Silent Hill 2\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 3"
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "U Got That (From \"Helltaker\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 6"
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "Build Our Machine (From \"Bendy And The Ink Machine\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 6"
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "Can't Be Erased (From \"Bendy And The Ink Machine\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 6"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "Portal 2 : End Credits : Want You Gone",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 4"
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "Join Us For A Bite (From \"Five Nights At Freddy's - Sister Location\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 6"
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "You Can't Hide (From \"Five Nights At Freddy's - Sister Location\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 6"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "Five Nights At Freddy's 1 (From \"Five Nights At Freddy's\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 6"
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Never Say Never The Animation (From \"Danganronpa\")",
+        "artist": "Geek Music",
+        "album": "The Best Video Game Music, Vol. 6"
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Rambley Review",
+        "artist": "RecD & Jakeneutron feat. OtterBoyVA",
+        "album": "Indigo Park, Chapter 1 (Original Game Soundtrack)"
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "Silent Hill F - Soundtrack - Hougejaku",
+        "artist": "Ruba",
+        "album": "Silent Hill F - Soundtrack - Hougejaku"
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "Silent Hill F - Soundtrack - The Bird's Lament",
+        "artist": "Ruba",
+        "album": "Silent Hill F - Soundtrack - The Bird's Lament"
+      },
+      {
+        "set": "Set 4",
+        "number": "13",
+        "title": "Silent Hill F - Soundtrack - The Wet Garden, Corridors of Darkness",
+        "artist": "Ruba",
+        "album": "Silent Hill F - Soundtrack - The Wet Garden, Corridors of Darkness"
+      },
+      {
+        "set": "Set 4",
+        "number": "14",
+        "title": "Silent Hill F - Soundtrack - TSUKIYONOINERIME",
+        "artist": "Ruba",
+        "album": "Silent Hill F - Soundtrack - TSUKIYONOINERIME"
+      },
+      {
+        "set": "Outro",
+        "number": "15",
+        "title": "LITTLE NIGHTMARES 3 SONG | Rockit Music",
+        "artist": "Rockit Music",
+        "album": "LITTLE NIGHTMARES 3 SONG | Rockit Music"
+      }
+    ]
+  },
+  {
+    "episode": "52",
+    "theme": "Warframe",
+    "tracks": [
+      {
+        "set": "Intro",
+        "number": "01",
+        "title": "We All Lift Together",
+        "artist": "Warframe",
+        "album": "Warframe | We All Lift Together"
+      },
+      {
+        "set": "Set 1",
+        "number": "02",
+        "title": "Warframe | **SPOILER WARNING** | ‘For Narmer’ Official Song",
+        "artist": "PlayWarframe",
+        "album": "Warframe | **SPOILER WARNING** | ‘For Narmer’ Official Song"
+      },
+      {
+        "set": "Set 1",
+        "number": "03",
+        "title": "TennoCon 2025 | \"Lullaby of the Manifold\" (Official Music Video)",
+        "artist": "PlayWarframe",
+        "album": "TennoCon 2025 | \"Lullaby of the Manifold\" (Official Music Video)"
+      },
+      {
+        "set": "Set 1",
+        "number": "04",
+        "title": "Warframe - PARTY OF YOUR LIFETIME_ (Official Audio Visualizer",
+        "artist": "Warframe",
+        "album": "Warframe 1999"
+      },
+      {
+        "set": "Set 2",
+        "number": "05",
+        "title": "Symphony of Boreal Wind",
+        "artist": "Yu-Peng Chen",
+        "album": "GENSHIN IMPACT - City of Winds and Idylls"
+      },
+      {
+        "set": "Set 2",
+        "number": "06",
+        "title": "Sleeping In The Cold Below (From \"Warframe\")",
+        "artist": "Warframe",
+        "album": ""
+      },
+      {
+        "set": "Set 2",
+        "number": "07",
+        "title": "Arisa",
+        "artist": "井上馨太",
+        "album": "STELLAR BLADE ORIGINAL SOUNDTRACK"
+      },
+      {
+        "set": "Set 3",
+        "number": "08",
+        "title": "Mothersphere",
+        "artist": "井上馨太",
+        "album": "STELLAR BLADE ORIGINAL SOUNDTRACK"
+      },
+      {
+        "set": "Set 3",
+        "number": "09",
+        "title": "Shelter (Title)",
+        "artist": "Oliver Good",
+        "album": "STELLAR BLADE ORIGINAL SOUNDTRACK"
+      },
+      {
+        "set": "Set 3",
+        "number": "10",
+        "title": "Color Your Night",
+        "artist": "Lotus Juice / 高橋あず美",
+        "album": "Persona 3 Reload Limited Box Original Soundtrack"
+      },
+      {
+        "set": "Set 4",
+        "number": "11",
+        "title": "キミの記憶 -Reload-",
+        "artist": "高橋あず美",
+        "album": "Persona 3 Reload Limited Box Original Soundtrack"
+      },
+      {
+        "set": "Set 4",
+        "number": "12",
+        "title": "Wuthering Waves - De Anima On the Soul",
+        "artist": "jixwang",
+        "album": "Wuthering Waves"
+      },
+      {
+        "set": "Outro",
+        "number": "13",
+        "title": "Fountain of Dreams",
+        "artist": "Nintendo & HAL Laboratory, Inc.",
+        "album": "Kirby Air Ride - Unofficial Soundtrack"
+      }
+    ]
+  }
 ]
