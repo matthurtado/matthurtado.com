@@ -2,6 +2,7 @@
 param(
     [string]$CommitMessage = "Update portfolio website",
     [string]$RemoteDirectory = "/public_html/",
+    [string[]]$SetlistPath,
     [switch]$SkipGit,
     [switch]$SkipUpload
 )
@@ -27,9 +28,74 @@ function Find-WinScp {
     throw "WinSCP.com could not be found. Install WinSCP or add it to PATH."
 }
 
+function Build-SetlistIndex {
+    $setlistDirectory = Join-Path $ProjectRoot "setlists"
+    $indexPath = Join-Path $setlistDirectory "index.json"
+    New-Item -ItemType Directory -Path $setlistDirectory -Force | Out-Null
+
+    $episodeArchive = [ordered]@{}
+    if (Test-Path -LiteralPath $indexPath) {
+        $existingEpisodes = @(Get-Content -Raw -LiteralPath $indexPath | ConvertFrom-Json)
+        foreach ($existingEpisode in $existingEpisodes) {
+            if ($null -ne $existingEpisode -and -not [string]::IsNullOrWhiteSpace([string]$existingEpisode.episode)) {
+                $episodeArchive[[string]$existingEpisode.episode] = $existingEpisode
+            }
+        }
+    }
+
+    foreach ($csvFile in Get-ChildItem -LiteralPath $setlistDirectory -Filter "*.csv" -File) {
+        $rows = @(Import-Csv -LiteralPath $csvFile.FullName)
+        if ($rows.Count -eq 0) { continue }
+
+        $first = $rows[0]
+        $episode = ([string]$first.Episode -replace '^\s*Episode\s*', '').Trim()
+        $theme = [string]$first.Theme
+        if ([string]::IsNullOrWhiteSpace($episode)) {
+            $episode = [System.IO.Path]::GetFileNameWithoutExtension($csvFile.Name)
+        }
+
+        $tracks = foreach ($row in $rows) {
+            $title = [string]$row.Title
+            if ([string]::IsNullOrWhiteSpace($title)) { continue }
+
+            [ordered]@{
+                set = [string]$row.Set
+                number = [string]$row.'Playlist Number'
+                title = $title
+                artist = [string]$row.Artist
+                album = [string]$row.Album
+            }
+        }
+
+        $episodeArchive[$episode] = [ordered]@{
+            episode = $episode
+            theme = $theme
+            tracks = @($tracks)
+        }
+    }
+
+    $sortedEpisodes = @($episodeArchive.Values | Sort-Object -Property @{ Expression = { if ([string]$_.episode -match '\d+') { [int]$Matches[0] } else { 0 } }; Descending = $true }, @{ Expression = { [string]$_.episode }; Descending = $true })
+    ConvertTo-Json -InputObject $sortedEpisodes -Depth 6 | Set-Content -LiteralPath $indexPath -Encoding utf8
+}
+
 if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot "index.html"))) {
     throw "index.html is missing from $ProjectRoot."
 }
+
+$setlistDirectory = Join-Path $ProjectRoot "setlists"
+New-Item -ItemType Directory -Path $setlistDirectory -Force | Out-Null
+foreach ($sourcePath in @($SetlistPath)) {
+    if ([string]::IsNullOrWhiteSpace($sourcePath)) { continue }
+    if (-not (Test-Path -LiteralPath $sourcePath -PathType Leaf)) {
+        throw "Setlist CSV was not found: $sourcePath"
+    }
+    if ([System.IO.Path]::GetExtension($sourcePath) -ne ".csv") {
+        throw "Setlist imports must be CSV files: $sourcePath"
+    }
+    Copy-Item -LiteralPath $sourcePath -Destination $setlistDirectory -Force
+}
+
+Build-SetlistIndex
 
 if (-not $SkipGit) {
     Push-Location $ProjectRoot
@@ -94,6 +160,10 @@ foreach ($file in $PublishFiles) {
 
     Copy-Item -LiteralPath $source -Destination $PublishDirectory
 }
+
+$publishedSetlistDirectory = Join-Path $PublishDirectory "setlists"
+New-Item -ItemType Directory -Path $publishedSetlistDirectory | Out-Null
+Copy-Item -LiteralPath (Join-Path $ProjectRoot "setlists\index.json") -Destination $publishedSetlistDirectory
 
 $openCommand = "open $WinScpSession"
 $synchronizeCommand = "synchronize remote $PublishDirectory $RemoteDirectory"

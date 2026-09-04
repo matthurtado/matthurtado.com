@@ -287,6 +287,24 @@
     .credit-row a::after { content: "↗"; color: var(--cyan); font-size: 1.1rem; }
     .credit-row a:hover strong { color: var(--violet); }
 
+    .episodes { display: grid; gap: .85rem; margin-top: 2rem; }
+    .episode { border: 1px solid var(--line); background: rgba(14, 7, 25, .72); }
+    .episode[open] { box-shadow: inset 4px 0 0 var(--purple); }
+    .episode summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 1.4rem; cursor: pointer; list-style: none; font-weight: 700; }
+    .episode summary::-webkit-details-marker { display: none; }
+    .episode summary::after { content: "+"; color: var(--cyan); font: 1rem var(--pixel); }
+    .episode[open] summary::after { content: "−"; }
+    .episode-title { font-size: clamp(1.05rem, 1.8vw, 1.35rem); }
+    .episode-theme { color: var(--violet); }
+    .tracklist { width: 100%; border-collapse: collapse; border-top: 1px solid var(--line); }
+    .tracklist th, .tracklist td { padding: .9rem 1.2rem; text-align: left; border-bottom: 1px solid rgba(201, 140, 255, .13); }
+    .tracklist th { color: var(--cyan); font: .48rem var(--pixel); text-transform: uppercase; }
+    .tracklist td { color: var(--muted); }
+    .tracklist.has-numbers td:first-child { width: 4rem; color: var(--pink); font-weight: 700; }
+    .tracklist strong { color: var(--ink); }
+    .set-heading td { color: var(--violet); background: rgba(155, 92, 255, .1); font: .5rem var(--pixel); text-transform: uppercase; }
+    .setlist-state { padding: 1.5rem; border: 1px solid var(--line); color: var(--muted); background: rgba(14, 7, 25, .72); }
+
     .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
     .action { display: inline-flex; align-items: center; justify-content: center; min-height: 3.4rem; padding: .8rem 1.25rem; border: 1px solid var(--violet); color: white; background: rgba(155, 92, 255, .12); text-decoration: none; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
     .action.primary { color: #100819; background: var(--violet); }
@@ -444,6 +462,8 @@
         overflow: visible;
       }
       .menu button { min-width: 0; font-size: .76rem; }
+      .tracklist th:nth-child(4), .tracklist td:nth-child(4) { display: none; }
+      .tracklist th, .tracklist td { padding: .75rem .65rem; }
       .stats, .project-grid { grid-template-columns: 1fr; }
       .project.wide { grid-column: auto; }
       .screen h2 { font-size: clamp(2.5rem, 15vw, 4.2rem); }
@@ -478,6 +498,7 @@
       <nav class="menu" role="tablist" aria-label="Main menu">
         <button id="tab-about" role="tab" aria-selected="true" aria-controls="about" data-target="about">About</button>
         <button id="tab-projects" role="tab" aria-selected="false" aria-controls="projects" data-target="projects">Personal Projects</button>
+        <button id="tab-soundscapes" role="tab" aria-selected="false" aria-controls="soundscapes" data-target="soundscapes">Virtual Soundscapes</button>
         <button id="tab-credits" role="tab" aria-selected="false" aria-controls="credits" data-target="credits">Credits</button>
         <button id="tab-contact" role="tab" aria-selected="false" aria-controls="contact" data-target="contact">Contact</button>
       </nav>
@@ -512,6 +533,13 @@
             <p>Experience, shipped work, and the full professional timeline.</p>
           </a>
         </div>
+      </section>
+
+      <section class="screen" id="soundscapes" role="tabpanel" aria-labelledby="tab-soundscapes" hidden>
+        <h2>Virtual <span class="accent">Soundscapes</span></h2>
+        <p class="lede">A weekly journey through video game music, featuring memorable scores, deep cuts, and conversations with the people who bring game worlds to life. Listen Wednesdays at 9 PM ET on Radio Catskill.</p>
+        <div class="actions"><a class="action primary" href="https://wjffradio.org/virtual-soundscapes/" target="_blank" rel="noopener">Visit the show page ↗</a></div>
+        <div class="episodes" id="episodes" aria-live="polite"><p class="setlist-state">Loading setlists...</p></div>
       </section>
 
       <section class="screen" id="credits" role="tabpanel" aria-labelledby="tab-credits" hidden>
@@ -607,6 +635,46 @@
 
     const initial = tabs.find(tab => `#${tab.dataset.target}` === location.hash);
     if (initial) selectTab(initial, false);
+
+    const episodesElement = document.getElementById('episodes');
+
+    function escapeHtml(value = '') {
+      const span = document.createElement('span');
+      span.textContent = value;
+      return span.innerHTML;
+    }
+
+    function renderEpisodes(episodes) {
+      if (!episodes.length) {
+        episodesElement.innerHTML = '<p class="setlist-state">Setlists are coming soon. Check back after the next broadcast.</p>';
+        return;
+      }
+
+      episodesElement.innerHTML = episodes.map((episode, episodeIndex) => {
+        let lastSet = '';
+        const hasTrackNumbers = episode.tracks.some(track => track.number);
+        const columnCount = hasTrackNumbers ? 4 : 3;
+        const rows = episode.tracks.map(track => {
+          const setRow = track.set && track.set !== lastSet
+            ? `<tr class="set-heading"><td colspan="${columnCount}">${escapeHtml(track.set)}</td></tr>`
+            : '';
+          lastSet = track.set || lastSet;
+          const numberCell = hasTrackNumbers ? `<td>${escapeHtml(track.number)}</td>` : '';
+          return `${setRow}<tr>${numberCell}<td><strong>${escapeHtml(track.title)}</strong></td><td>${escapeHtml(track.artist)}</td><td>${escapeHtml(track.album)}</td></tr>`;
+        }).join('');
+        const theme = episode.theme ? `<span class="episode-theme">${escapeHtml(episode.theme)}</span>` : '';
+        const numberHeading = hasTrackNumbers ? '<th>#</th>' : '';
+        return `<details class="episode" ${episodeIndex === 0 ? 'open' : ''}><summary><span class="episode-title">Episode ${escapeHtml(episode.episode)}</span>${theme}</summary><table class="tracklist${hasTrackNumbers ? ' has-numbers' : ''}"><thead><tr>${numberHeading}<th>Track</th><th>Artist</th><th>Album</th></tr></thead><tbody>${rows}</tbody></table></details>`;
+      }).join('');
+    }
+
+    fetch('setlists/index.json', { cache: 'no-cache' })
+      .then(response => {
+        if (!response.ok) throw new Error('Setlists unavailable');
+        return response.json();
+      })
+      .then(renderEpisodes)
+      .catch(() => { episodesElement.innerHTML = '<p class="setlist-state">Setlists are temporarily unavailable.</p>'; });
 
     const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
     const secretOverlay = document.getElementById('secretOverlay');

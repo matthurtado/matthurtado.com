@@ -1,0 +1,279 @@
+{
+  "FormatVersion": 5,
+  "ShowName": "Virtual Soundscapes",
+  "Host": "Matt Hurtado",
+  "Episode": "Episode 59",
+  "Theme": "Chill Nights",
+  "Notes": "",
+  "TargetDurationTicks": 34800000000,
+  "Entries": [
+    {
+      "Type": "Separator",
+      "FilePath": "",
+      "Name": "Intro",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\1. 2.30AM (VHS skyline).mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Separator",
+      "FilePath": "",
+      "Name": "Set 1",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\2. Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 5.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\3. Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 8.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\4. 52Hz (feat. RAY).mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Separator",
+      "FilePath": "",
+      "Name": "Set 2",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\5. 1993 Space Machine - Forest.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\6. 1993 Space Machine - Level 1.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\7. Forgotten Forest (Levels).mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Separator",
+      "FilePath": "",
+      "Name": "Set 3",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\8. Main Menu.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\9. A Night Wanderer.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\10.  Evening Theme.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Separator",
+      "FilePath": "",
+      "Name": "Set 4",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\11. Moonsurgent (Connie\u0027s Theme).mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\12. More Friends (Second Spirit Theme Suite).mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\13. Falling asleep to the sound of rain.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Separator",
+      "FilePath": "",
+      "Name": "Set 5",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\14. Time (Night ver.).mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\15. Same Old Story (Instrumental).mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Separator",
+      "FilePath": "",
+      "Name": "Outro",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    },
+    {
+      "Type": "Track",
+      "FilePath": "D:\\Radio\\Episodes\\ep59\\16. Wherever We Are Now.mp3",
+      "Name": "",
+      "TrackTypeId": "",
+      "PlannedFadeOutTicks": null,
+      "ScriptText": "",
+      "ScriptWordsPerMinute": 140,
+      "ScriptManualDurationTicks": null
+    }
+  ],
+  "TrackTypes": [
+    {
+      "Id": "music",
+      "Name": "Music",
+      "FileNameSuffix": "_music",
+      "IsBuiltIn": true
+    },
+    {
+      "Id": "voice-over",
+      "Name": "Voice Over",
+      "FileNameSuffix": "_voice",
+      "IsBuiltIn": true
+    },
+    {
+      "Id": "1227aba8cdfc48cf85795fb79dcdba3f",
+      "Name": "test",
+      "FileNameSuffix": "_Test",
+      "IsBuiltIn": false
+    }
+  ],
+  "TrackPaths": [
+    "D:\\Radio\\Episodes\\ep59\\1. 2.30AM (VHS skyline).mp3",
+    "D:\\Radio\\Episodes\\ep59\\2. Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 5.mp3",
+    "D:\\Radio\\Episodes\\ep59\\3. Bishoujo Senshi Sailor Moon Super S Various Emotion - Track 8.mp3",
+    "D:\\Radio\\Episodes\\ep59\\4. 52Hz (feat. RAY).mp3",
+    "D:\\Radio\\Episodes\\ep59\\5. 1993 Space Machine - Forest.mp3",
+    "D:\\Radio\\Episodes\\ep59\\6. 1993 Space Machine - Level 1.mp3",
+    "D:\\Radio\\Episodes\\ep59\\7. Forgotten Forest (Levels).mp3",
+    "D:\\Radio\\Episodes\\ep59\\8. Main Menu.mp3",
+    "D:\\Radio\\Episodes\\ep59\\9. A Night Wanderer.mp3",
+    "D:\\Radio\\Episodes\\ep59\\10.  Evening Theme.mp3",
+    "D:\\Radio\\Episodes\\ep59\\11. Moonsurgent (Connie\u0027s Theme).mp3",
+    "D:\\Radio\\Episodes\\ep59\\12. More Friends (Second Spirit Theme Suite).mp3",
+    "D:\\Radio\\Episodes\\ep59\\13. Falling asleep to the sound of rain.mp3",
+    "D:\\Radio\\Episodes\\ep59\\14. Time (Night ver.).mp3",
+    "D:\\Radio\\Episodes\\ep59\\15. Same Old Story (Instrumental).mp3",
+    "D:\\Radio\\Episodes\\ep59\\16. Wherever We Are Now.mp3"
+  ]
+}
