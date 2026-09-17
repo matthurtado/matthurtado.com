@@ -1,5 +1,81 @@
 [
     {
+        "episode":  "65",
+        "theme":  "Legend of Zelda - 40th Anniversary",
+        "tracks":  [
+                       {
+                           "set":  "Intro",
+                           "number":  "01",
+                           "title":  "Link\u0027s Awakening Medley 2024",
+                           "artist":  "Nintendo",
+                           "album":  "Zelda Concert 2024"
+                       },
+                       {
+                           "set":  "Set 1",
+                           "number":  "02",
+                           "title":  "Chamber of the Goddess [A Link to the Past]",
+                           "artist":  "Disasterpeace",
+                           "album":  "25 Year Legend: A Legend of Zelda Indie Game Composer Tribute"
+                       },
+                       {
+                           "set":  "Set 1",
+                           "number":  "03",
+                           "title":  "The Legend of Zelda (Game Boy Version) - \"To the Island of Dreams\"",
+                           "artist":  "Tokyo City Philharmonic Orchestra",
+                           "album":  "Game Music Concert 3 - By Symphony Orchestra"
+                       },
+                       {
+                           "set":  "Set 1",
+                           "number":  "04",
+                           "title":  "Suite from \"The Legend of Zelda: Ocarina of Time\"",
+                           "artist":  "The Blueshift Big Band",
+                           "album":  "Joystick Jazz, Vol. 1: The Blueshift Big Band Plays Iconic Video Game Hits"
+                       },
+                       {
+                           "set":  "Set 2",
+                           "number":  "05",
+                           "title":  "Title Theme ~ The Hour of Twilight (from \"The Legend of Zelda: Twilight Princess\") (Lo-Fi Edit)",
+                           "artist":  "The Floor Is Lava",
+                           "album":  "Video Game LoFi: Zelda Vol. 2 - Doors of Time"
+                       },
+                       {
+                           "set":  "Set 2",
+                           "number":  "06",
+                           "title":  "The Windwaker/Paddy Fahey\u0027s Reel",
+                           "artist":  "The DIT Irish Traditional Music Ensemble",
+                           "album":  "Eimear Noone Presents: The Celtic Link: Themes From \"The Legend of Zelda\""
+                       },
+                       {
+                           "set":  "Set 2",
+                           "number":  "07",
+                           "title":  "Hyrule Castle",
+                           "artist":  "Manaka Kataoka",
+                           "album":  "The Legend of Zelda: Breath of the Wild"
+                       },
+                       {
+                           "set":  "Set 3",
+                           "number":  "08",
+                           "title":  "Rito Village (From \"The Legend Of Zelda: Breath Of The Wild\")",
+                           "artist":  "The Consouls",
+                           "album":  "Korok Cafe"
+                       },
+                       {
+                           "set":  "Set 3",
+                           "number":  "09",
+                           "title":  "Gerudo Valley (Redux)",
+                           "artist":  "Mariachi Entertainment System",
+                           "album":  "Hecho En Hyrule"
+                       },
+                       {
+                           "set":  "Outro",
+                           "number":  "10",
+                           "title":  "Movement IV - Time of the Falling Rain",
+                           "artist":  "Zelda Symphony and Choir",
+                           "album":  "The Legend of Zelda - Symphony of the Goddesses - Master Quest"
+                       }
+                   ]
+    },
+    {
         "episode":  "63",
         "theme":  "Get Some Rest",
         "tracks":  [
