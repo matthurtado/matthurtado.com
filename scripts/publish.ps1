@@ -153,6 +153,9 @@ if (-not $WebsiteOnly) {
         git add -- $websitePaths
         if ($LASTEXITCODE -ne 0) { throw "Git staging failed with exit code $LASTEXITCODE." }
 
+        git add -u -- "setlists"
+        if ($LASTEXITCODE -ne 0) { throw "Git staging failed for tracked setlist changes." }
+
         $setlistCsvFiles = @(Get-ChildItem -LiteralPath $setlistDirectory -Filter "*.csv" -File)
         foreach ($setlistCsvFile in $setlistCsvFiles) {
             git add -- $setlistCsvFile.FullName
