@@ -76,6 +76,96 @@
                    ]
     },
     {
+        "episode":  "64",
+        "theme":  "Castlevania - 40th Anniversary",
+        "tracks":  [
+                       {
+                           "set":  "Intro",
+                           "number":  "01",
+                           "title":  "Heart of Fire (Castlevania)",
+                           "artist":  "The Megas x The Belmonts",
+                           "album":  "The Megas x The Belmonts: What a Horrible Night... ~Cassette EP~ (2016)"
+                       },
+                       {
+                           "set":  "Set 1",
+                           "number":  "02",
+                           "title":  "An Empty Tome (From \"Castlevania: Order of Ecclesia\")",
+                           "artist":  "Takato2;Takato2;Takato2;Takato2",
+                           "album":  "Takato2: Castlevania Cover Archive (2024)"
+                       },
+                       {
+                           "set":  "Set 1",
+                           "number":  "03",
+                           "title":  "Bloody Tears",
+                           "artist":  "Yoann Laulan",
+                           "album":  "Dead Cells Return To Castlevania"
+                       },
+                       {
+                           "set":  "Set 1",
+                           "number":  "04",
+                           "title":  "Castlevania (Symphony of the Night) - Lost Painting (Lo-Fi Hip-Hop Remix)",
+                           "artist":  "David Samadraxha",
+                           "album":  "Castlevania (Rearranged by MajinblueX)"
+                       },
+                       {
+                           "set":  "Set 2",
+                           "number":  "05",
+                           "title":  "Botanical Nightmare (Ripe Seeds)",
+                           "artist":  "Thompson, Matt",
+                           "album":  "Castlevania The Adventure: Masque of Retribution OST (2024)"
+                       },
+                       {
+                           "set":  "Set 2",
+                           "number":  "06",
+                           "title":  "The Megas x The Belmonts (Skulls) - 04 Vampire Killer (feat. Amanda Lepre)",
+                           "artist":  "The Megas x The Belmonts",
+                           "album":  "Castlevania: 1 Hour Synthwave-Techno Mix (2021)"
+                       },
+                       {
+                           "set":  "Set 2",
+                           "number":  "07",
+                           "title":  "BONUS TRACK - Dance of Pales - Symphony of the Night",
+                           "artist":  "Castlevania Symphonic Suite - David Westerlund",
+                           "album":  "CASTLEVANIA SYMPHONIC SUITE"
+                       },
+                       {
+                           "set":  "Set 3",
+                           "number":  "08",
+                           "title":  "Nocturne ~Castlevania- Symphony of the Night (PS1)~",
+                           "artist":  "Azusa Chiba ;  千葉梓, AKANE ;  茜-AKANE-, Soyo Oka ;  岡素世, Masato Kouda ;  甲田雅人, Hiroki Kikuta ;  菊田裕樹, Maki Kirioka ;  桐岡麻季, Manami Kiyota ;  清田愛未, Kumi Tanioka ;  谷岡久美, Hideki Sakamoto ;  坂本英城, Eriko Imura ;  井村絵里子, Yoshino Aoki ;  青木佳乃, Masashi Hamauzu ;  浜渦正志, kukui",
+                           "album":  "Akumajo Dracula Tribute Vol.2 [LC-1958]"
+                       },
+                       {
+                           "set":  "Set 3",
+                           "number":  "09",
+                           "title":  "Sparkle (Castlevania: Order of Ecclesia - Emerald Mist)",
+                           "artist":  "Joshua Morse",
+                           "album":  "Castlevania: Sonata of the Damned"
+                       },
+                       {
+                           "set":  "Set 4",
+                           "number":  "10",
+                           "title":  "THE SINKING OLD SANCTUARY ~Castlevania- Bloodlines (Genesis)~",
+                           "artist":  "Azusa Chiba ;  千葉梓, AKANE ;  茜-AKANE-, Soyo Oka ;  岡素世, Masato Kouda ;  甲田雅人, Hiroki Kikuta ;  菊田裕樹, Maki Kirioka ;  桐岡麻季, Manami Kiyota ;  清田愛未, Kumi Tanioka ;  谷岡久美, Hideki Sakamoto ;  坂本英城, Eriko Imura ;  井村絵里子, Yoshino Aoki ;  青木佳乃, Masashi Hamauzu ;  浜渦正志, kukui",
+                           "album":  "Akumajo Dracula Tribute Vol.2 [LC-1958]"
+                       },
+                       {
+                           "set":  "Set 4",
+                           "number":  "11",
+                           "title":  "Ending Theme",
+                           "artist":  "Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh;Willis, Josh",
+                           "album":  "Willis, Josh: Devil\u0027s Curse ~Super Castlevania IV Remake~ (2022)"
+                       },
+                       {
+                           "set":  "Outro",
+                           "number":  "12",
+                           "title":  "I AM THE WIND",
+                           "artist":  "Cynthia Harrell",
+                           "album":  "I AM THE WIND"
+                       }
+                   ]
+    },
+    {
         "episode":  "63",
         "theme":  "Get Some Rest",
         "tracks":  [
