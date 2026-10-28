@@ -1,5 +1,88 @@
 [
     {
+        "episode":  "67",
+        "theme":  "2026 Halloween Celebration Part 2",
+        "tracks":  [
+                       {
+                           "set":  "",
+                           "number":  "01",
+                           "title":  "Ashes to Ashes Dusk to Dusk",
+                           "artist":  "Andrew Hulshult",
+                           "album":  "Dusk (Original Game Soundtrack)"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "02",
+                           "title":  "Fleeting Haven",
+                           "artist":  "NyxTheShield",
+                           "album":  "Tormented Souls 2 (Original Soundtrack)"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "03",
+                           "title":  "Darkbeast",
+                           "artist":  "Tsukasa Saitoh",
+                           "album":  "Bloodborneª Original Soundtrack"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "04",
+                           "title":  "Luigi\u0027s Mansion: Main Theme",
+                           "artist":  "London Philharmonic Orchestra",
+                           "album":  "The Greatest Video Game Music 2"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "05",
+                           "title":  "The Point Where Light Vanishes",
+                           "artist":  "David Garcia Diaz",
+                           "album":  "Senua\u0027s Saga: Hellblade II (Original Soundtrack)"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "06",
+                           "title":  "Darkwood",
+                           "artist":  "Artur Kordas",
+                           "album":  "Darkwood"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "07",
+                           "title":  "Theme Of Laura II",
+                           "artist":  "AKIRA YAMAOKA",
+                           "album":  "SILENT HILL 2 ORIGINAL SOUNDTRACK -2024-"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "08",
+                           "title":  "Dawn of the Doors",
+                           "artist":  "LSPLASH",
+                           "album":  "Doors Original Soundtrack"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "09",
+                           "title":  "Il Cuor non si Spaura",
+                           "artist":  "Yoko Shimomura",
+                           "album":  "Vampire Crawlers - The Original Soundtrack"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "10",
+                           "title":  "The Veil (Darkness Falls)",
+                           "artist":  "Ruth Radelet, Adam Miller, Nat Walker",
+                           "album":  "Bloom \u0026 Rage: The Lost Tapes"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "11",
+                           "title":  "Dr. Emily Zarka Interview",
+                           "artist":  "",
+                           "album":  ""
+                       }
+                   ]
+    },
+    {
         "episode":  "66",
         "theme":  "2026 Halloween Celebration Part 1",
         "tracks":  [
