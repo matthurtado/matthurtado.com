@@ -1,5 +1,116 @@
 [
     {
+        "episode":  "68",
+        "theme":  "Cozy Fall",
+        "tracks":  [
+                       {
+                           "set":  "",
+                           "number":  "01",
+                           "title":  "Id~Serenity",
+                           "artist":  "Hiroki Morishita",
+                           "album":  "Fire Emblem Awakening"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "02",
+                           "title":  "Lazy Afternoons",
+                           "artist":  "Yoko Shimomura",
+                           "album":  "KINGDOM HEARTS -HD 1.5 \u0026 2.5 ReMIX- Original Soundtrack BOX"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "03",
+                           "title":  "Hummingberg",
+                           "artist":  "Max LL",
+                           "album":  "Spiritfarer (Original Soundtrack) [Farewell Edition]"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "04",
+                           "title":  "Tarott Master",
+                           "artist":  "Bashi Boizu",
+                           "album":  "Littlewood (Original Soundtrack)"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "05",
+                           "title":  "The Lumpy Pumpkin",
+                           "artist":  "藤井志帆",
+                           "album":  "ゼルダの伝説 スカイウォードソード オリジナルサウンドトラック"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "06",
+                           "title":  "The Woodlands",
+                           "artist":  "Yasunori Nishiki",
+                           "album":  "OCTOPATH TRAVELER Original Soundtrack"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "07",
+                           "title":  "Withered Wasteland (Medley)",
+                           "artist":  "GAME FREAK, Koei Tecmo, Omega Force",
+                           "album":  "Pokémon Pokopia"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "08",
+                           "title":  "Fall (The Smell Of Mushroom)",
+                           "artist":  "ConcernedApe",
+                           "album":  "Stardew Valley OST"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "09",
+                           "title":  "Sector 4: Ravaged Rustworks",
+                           "artist":  "Masato Kouda, Kento Hasegawa",
+                           "album":  "Hey! Pikmin Original Soundtrack (GAMERIP)"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "10",
+                           "title":  "Welcome to Beacon Pines",
+                           "artist":  "Matt Meyer",
+                           "album":  "Beacon Pines (Original Soundtrack)"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "11",
+                           "title":  "Medieval Forest Theme",
+                           "artist":  "Club Penguin",
+                           "album":  ""
+                       },
+                       {
+                           "set":  "",
+                           "number":  "12",
+                           "title":  "Rocky Ridge (Night) (Segment 4)",
+                           "artist":  "GAME FREAK, Koei Tecmo, Omega Force",
+                           "album":  "Pokémon Pokopia"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "13",
+                           "title":  "Maple Treeway",
+                           "artist":  "Asuka Ohta; Ryo Nagamatsu",
+                           "album":  "Mario Kart WII"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "14",
+                           "title":  "Main Street 3 (Night) - Rainy",
+                           "artist":  "Manaka Kataoka",
+                           "album":  "Animal Crossing: New Leaf \u0026 Welcome amiibo - Original Soundtrack"
+                       },
+                       {
+                           "set":  "",
+                           "number":  "15",
+                           "title":  "Farm Winter",
+                           "artist":  "Harvest Moon: Story of Seasons",
+                           "album":  ""
+                       }
+                   ]
+    },
+    {
         "episode":  "67",
         "theme":  "2026 Halloween Celebration Part 2",
         "tracks":  [
